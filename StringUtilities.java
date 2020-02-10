@@ -38,10 +38,23 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-     
+  /*    StringBuffer sb=new StringBuffer();
+                       if(word.length()%2==0)
+                       {
+                       sb.append(word.substring((word.length()/2)-1,(word.length()/2)+1));
+                       }
+                       return sb.toString();
 
 
-        return null;
+if ((word.length() % 2) == 0)
+{
+
+if (word.length() > 2) {return word.substring(word.length()/2 - 1, word.length()/2 + 1);}
+else {return word;}
+}
+else {return word.substring(word.length()/2);}
+*/
+       return null;
       }
     /**
      * @param value value to have character removed from
@@ -49,6 +62,7 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
+
         return null;
     }
 
@@ -57,6 +71,7 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+      String lastWord = sentence.substring(sentence.lastIndexOf(" ")+1);
+        return lastWord;
     }
 }
